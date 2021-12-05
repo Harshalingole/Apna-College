@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+header {
+    text-align: center;
+    color: black;
+    background-color: lightcyan;
+    padding: 50px;
+    font-size: larger;
+    line-height: 1.5;
+    border: rgb(218, 215, 215) 2px solid;
+}
+nav {
+    background-color: black;
+    overflow: hidden;
+}
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 15px;
+    display: block;
+    float: left;
+}
+nav a:hover {
+    background-color: thistle;
+    color: black;
+}
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        width: auto;
+    }
+}
+main {
+    box-sizing: border-box;
+    border: rgb(218, 215, 215) 2px solid;
+}
+section {
+    height: 790px;
+    border: rgb(218, 215, 215) 2px solid;
+}
+.leftside {
+    background-color: rgb(172, 199, 223);
+    width: 40%;
+    padding: 10px;
+    float: left;
+}
+.leftside div {
+    background-color: rgb(166, 230, 230);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.leftside h2,h4 {
+    margin-bottom: 15px;
+}
+.img {
+    background-color: lightgray;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .leftside{
+        width: 100%;
+    }
+}
+.rightside {
+    background-color: rgb(96, 117, 134);
+    width: 60%;
+    padding: 10px;
+    float: left;
+}
+.rightside div {
+    background-color: rgb(54, 165, 165);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 600px) {
+    .rightside{
+        width: auto;
+    }
+}
+footer{
+    clear: both;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: whitesmoke 1px solid;
+}
