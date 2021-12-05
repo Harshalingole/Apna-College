@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+    margin: 5px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+}
+.child, .child-mid{
+    width: 25%;
+    height: 500px;
+    margin: 30px;
+    background-color: azure;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 4px #C4C0BC;
+}
+.child-mid {
+    height: 550px;
+    margin: 15px 30px 30px 30px;
+}
+img {
+    width: 100%;
+}
+h2,p {
+    margin: 25px;
+    text-align: left;
+}
+input[type="button"] {
+    margin: 0px 25px 25px 25px;
+    text-align: center;
+    padding: 8px ;
+    height: auto;
+    width: 70%;
+    background-color: thistle;
+}
