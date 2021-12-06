@@ -4,10 +4,12 @@ body {
 }
 .main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .child, .child-mid{
-    width: 25%;
+    flex: 25%;
+    max-width: 25%;
     height: 500px;
     margin: 30px;
     background-color: azure;
@@ -23,6 +25,7 @@ img {
     width: 100%;
 }
 h2,p {
+    width: fit-content;
     margin: 25px;
     text-align: left;
 }
@@ -33,4 +36,20 @@ input[type="button"] {
     height: auto;
     width: 70%;
     background-color: thistle;
+}
+/* Responsive layout - makes a two column-layout instead of three columns */
+
+@media (max-width: 800px) {
+    .child, .child-mid {
+        flex: 40%;
+        max-width: 40%;
+    }
+}
+/* Responsive layout - makes a one column-layout instead of three columns */
+@media (max-width: 600px) {
+    .child-mid, .child {
+        flex: 90%;
+        max-width: 90%;
+        height: auto;
+    }
 }
